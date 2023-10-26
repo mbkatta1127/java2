@@ -56,19 +56,19 @@ public class Main {
 
     private static void ex5() {
         //Part A
-        /*var shoppingCart = new ShoppingCart();
-        shoppingCart.addItem(new Item(2.00F, 4, "Socks"));
-        shoppingCart.addItem(new Item(10.00F, 2, "Shirts"));
-        shoppingCart.calculateTotal();
-        System.out.println(shoppingCart.getTotal());*/
-
-
-        //Part C
         var shoppingCart = new ShoppingCart();
         shoppingCart.addItem(new Item(2.00F, 4, "Socks"));
         shoppingCart.addItem(new Item(10.00F, 2, "Shirts"));
         shoppingCart.calculateTotal();
-        var invoice = shoppingCart.shipOrder("Jon Smith", "123 Green Street", "Austin", "TX", 78737);
+        System.out.println(shoppingCart.getTotal());
+
+
+        //Part C
+        var shoppingCart2 = new ShoppingCart();
+        shoppingCart2.addItem(new Item(2.00F, 4, "Socks"));
+        shoppingCart2.addItem(new Item(10.00F, 2, "Shirts"));
+        shoppingCart2.calculateTotal();
+        var invoice = shoppingCart2.shipOrder("Jon Smith", "123 Green Street", "Austin", "TX", 78737);
         System.out.println(invoice);
     }
 
